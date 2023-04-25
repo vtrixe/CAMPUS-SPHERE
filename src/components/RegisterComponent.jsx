@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RegisterAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpeg";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueId";
 import "../Sass/LoginComponent.scss";
