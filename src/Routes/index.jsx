@@ -6,6 +6,7 @@ import ProfileLayout from "../layouts/ProfileLayout";
 import ConnectionLayout from "../layouts/ConnectionLayout";
 import  Landing from "../Pages/Landing"
 import "../index.scss"
+import portfolio from "../Pages/portfolio.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -33,4 +34,8 @@ export const router = createBrowserRouter([
     path: "/connections",
     element: <ConnectionLayout />,
   },
+  {
+    path: "/portfolio",
+    element: <portfolio />
+  }
 ]);

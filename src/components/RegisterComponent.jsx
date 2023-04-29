@@ -30,8 +30,27 @@ export default function RegisterComponent() {
   };
 
   return (
+
+    <div className="top-level-div">
+    
+    <div className="divheader">
+    <div className="divheader3-inner">
+      <div className="h4fs-1">
+        <div className="campus-sphere1111111111111101">
+          <p className="campus-">CAMPUS SPHERE</p>
+        </div>
+      </div>
+      <div className="divnav3-inner-links">
+      <a href="/" class="home-link">Home</a>
+<a href="/about" class="documents-link">About Us</a>
+<a href="/contact" class="projects-link">Contact Us</a>
+<a href="/register" class="news-link">Sign Up</a>
+    </div>
+  </div>
+    
     <div className="login-wrapper">
-      <img src={logo} className="logo" />
+    <div className="logo"> Campus Sphere</div>
+
 
       <div className="login-wrapper-inner">
         <h1 className="heading">Connect with your peers</h1>
@@ -70,11 +89,13 @@ export default function RegisterComponent() {
       <div className="google-btn-container">
         <p className="go-to-signup">
           Already a Member?{" "}
-          <span className="join-now" onClick={() => navigate("/")}>
+          <span className="join-now" onClick={() => navigate("/login")}>
             Log In.
           </span>
         </p>
       </div>
+    </div>
+    /</div>
     </div>
   );
 }

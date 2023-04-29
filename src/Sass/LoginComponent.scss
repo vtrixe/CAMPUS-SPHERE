@@ -5,10 +5,126 @@ $gray-color: #f2f2f2;
 
 
 body {
-  background-color: white;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bg.png");
+  overflow-x: hidden;
+
+  
 }
+
+.top-level-div {
+
+  background-image: url("../assets/bg.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.home-link,
+.documents-link,
+.news-link,
+.projects-link {
+  position: absolute;
+  top: -1px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-link {
+  left: 0;
+  font-size: var(--font-size-lgi);
+}
+
+.documents-link,
+.news-link,
+.projects-link {
+  left: 176.02px;
+}
+
+.news-link,
+.projects-link {
+  left: 399.02px;
+}
+
+.news-link {
+  left: 592.47px;
+}
+
+
+.divnav3-inner-links {
+  position: absolute;
+  top: calc(50% - 12.68px);
+  left: 345.22px;
+  width: 701.23px;
+  height: 25.36px;
+}
+.login {
+  position: relative;
+  line-height: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.h4fs-1 {
+  position: absolute;
+  top: calc(50% - 39.65px);
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 9.44000244140625px 0.4000000059604645px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 24px;
+  height: 50px;
+}
+
+.divheader3-inner {
+  position: relative;
+  width: 1302.7px;
+  height: 73px;
+  flex-shrink: 0;
+}
+.divheader {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-13xl) var(--padding-99xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 40px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico&display=swap');
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: large;
+  text-transform: uppercase;
+  text-shadow: #283e4a;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-style: italic;
+  font-family: 'Pacifico', cursive;
+}
+
+
+
+
+
 
 
 .login-wrapper {

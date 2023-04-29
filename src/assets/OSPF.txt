@@ -1,0 +1,15 @@
+Sr. Device | Interface IP Address
+No.
+1 Router1 Fa0/1 10.0.0.1/8
+51/0 192.168.1.1/24
+2 Router? S1/0 102.168.1.2/24
+Fa0/0 20.0.0.1/8
+Fa0/1 150.150.150.1/24
+3 Router3 FaO/1 150.150.150.2/24
+4 Switchl N/A N/A
+5 Switch? N/A N/A
+6 PCO Fal 10.0.0.2/8
+7 PC1 Fal 10.0.0.3/8
+8 PC2 FaO 20.0.0.2/8
+9 PC3 FaO 20.0.0.3/8
+
