@@ -9,6 +9,8 @@ import "../index.scss"
 import Portfolio from "../Pages/portfolio.jsx";
 import Hiring from "../Pages/Hiring";
 import Events from "../Pages/Events";
+import About from "../Pages/about";
+import Contact from "../Pages/contactUs";
 
 export const router = createBrowserRouter([
   {
@@ -47,5 +49,13 @@ export const router = createBrowserRouter([
   {
     path: "/events",
     element: <Events />
-  }
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
 ]);
