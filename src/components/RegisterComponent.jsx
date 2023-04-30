@@ -37,7 +37,7 @@ export default function RegisterComponent() {
     <div className="divheader3-inner">
       <div className="h4fs-1">
         <div className="campus-sphere1111111111111101">
-          <p className="campus-">CAMPUS SPHERE</p>
+          <div className="logo">CAMPUS SPHERE</div>
         </div>
       </div>
       <div className="divnav3-inner-links">

@@ -6,7 +6,9 @@ import ProfileLayout from "../layouts/ProfileLayout";
 import ConnectionLayout from "../layouts/ConnectionLayout";
 import  Landing from "../Pages/Landing"
 import "../index.scss"
-import portfolio from "../Pages/portfolio.jsx";
+import Portfolio from "../Pages/portfolio.jsx";
+import Hiring from "../Pages/Hiring";
+import Events from "../Pages/Events";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const router = createBrowserRouter([
   },
   {
     path: "/portfolio",
-    element: <portfolio />
+    element: <Portfolio />
+  },
+  {
+    path: "/hiring",
+    element: <Hiring />
+  },
+  {
+    path: "/events",
+    element: <Events />
   }
 ]);

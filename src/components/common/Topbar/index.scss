@@ -4,6 +4,7 @@
   background-color: rgba(255, 255, 255, 0.87);
   display: flex;
   align-items: center;
+  background-color: black;
 }
 .linkedin-logo {
   width: 65px;
@@ -76,4 +77,84 @@
   .search-inner:hover {
     background-color: #bbbbbb;
   }
+}
+
+.h4fs-1 {
+  position: absolute;
+  top: calc(50% - 39.65px);
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 9.44000244140625px 0.4000000059604645px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 24px;
+}
+.home-link,
+.documents-link,
+.news-link,
+.projects-link {
+  position: absolute;
+  top: -1px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-link {
+  left: 0;
+  font-size: var(--font-size-lgi);
+}
+
+.documents-link,
+.news-link,
+.projects-link {
+  left: 176.02px;
+}
+
+.news-link,
+.projects-link {
+  left: 399.02px;
+}
+
+.news-link {
+  left: 592.47px;
+}
+
+
+.divnav3-inner-links {
+  position: absolute;
+  top: calc(50% - 12.68px);
+  left: 345.22px;
+  width: 701.23px;
+  height: 25.36px;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+.divheader3-inner {
+  position: relative;
+  width: 1302.7px;
+  height: 73px;
+  flex-shrink: 0;
+}
+.divheader {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-13xl) var(--padding-99xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav-text {
+  margin-right: 1rem;
+}
+.topicons{
+  line-height: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-poppins);
 }

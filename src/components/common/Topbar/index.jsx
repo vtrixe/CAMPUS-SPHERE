@@ -13,6 +13,11 @@ import { BsBriefcase } from "react-icons/bs";
 import { getAllUsers } from "../../../api/FirestoreAPI";
 import ProfilePopup from "../ProfilePopup";
 import "./index.scss";
+import Home from "../Home";
+import Crew from "../Crew";
+import Careerops from "../Careerops";
+import Events from "../Events";
+import Myportfolio from "../Myportfolio";
 
 export default function Topbar({ currentUser }) {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -74,7 +79,10 @@ export default function Topbar({ currentUser }) {
         <></>
       )}
 
-      <img className="logo" src={logo} alt="logo" />
+<a href="/home">
+  <div className="logo">Campus Sphere</div>
+</a>
+
       {isSearch ? (
         <SearchUsers
           setIsSearch={setIsSearch}
@@ -87,19 +95,36 @@ export default function Topbar({ currentUser }) {
             className="react-icon"
             onClick={() => setIsSearch(true)}
           />
-          <AiOutlineHome
-            size={30}
-            className="react-icon"
-            onClick={() => goToRoute("/home")}
-          />
-          <AiOutlineUserSwitch
+         <a href="/home">
+         <Home
+         size={30}
+         className="react-icon"
+         />
+         </a>
+
+         <a href="/connections">
+ 
+          <Crew
             size={30}
             className="react-icon"
             onClick={() => goToRoute("/connections")}
           />
-          <BsBriefcase size={30} className="react-icon" />
-          <AiOutlineMessage size={30} className="react-icon" />
-          <AiOutlineBell size={30} className="react-icon" />
+          </a>
+
+          <a href="/hiring">
+          
+          <Careerops size={30} className="react-icon" />
+          </a>
+
+
+          <a href="/events">
+
+          <Events size={30} className="react-icon" />
+          </a>
+
+          <a href="/portfolio">
+          <Myportfolio size={30} className="react-icon" />
+          </a>
         </div>
       )}
       <img
