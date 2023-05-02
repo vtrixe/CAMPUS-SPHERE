@@ -46,11 +46,11 @@ export default function LoginComponent() {
   </div>
     
     <div className="login-wrapper">
-      <div className="logo"> Campus Sphere</div>
+      <div className="loginc"> Campus Sphere</div>
 
       <div className="login-wrapper-inner">
-        <h1 className="heading2">Login to Campus Sphere</h1>
-        <p className="sub-heading">Connect and collaborate with likeminded individuals</p>
+        <h1 className="loginc">Login to Campus Sphere</h1>
+        <p className="loginc">Connect and collaborate with likeminded individuals</p>
 
         <div className="auth-inputs">
           <input

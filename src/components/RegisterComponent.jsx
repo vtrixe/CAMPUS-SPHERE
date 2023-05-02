@@ -49,11 +49,11 @@ export default function RegisterComponent() {
   </div>
     
     <div className="login-wrapper">
-    <div className="logo"> Campus Sphere</div>
+    <div className="loginc"> Campus Sphere</div>
 
 
       <div className="login-wrapper-inner">
-        <h1 className="heading">Connect with your peers</h1>
+        <h1 className="loginc">Connect with your peers</h1>
 
         <div className="auth-inputs">
           <input
