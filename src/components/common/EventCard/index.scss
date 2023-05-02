@@ -1,0 +1,59 @@
+.event-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    .event-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      .event-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+  
+      .event-organizer {
+        font-size: 16px;
+        font-weight: bold;
+        color: #888;
+      }
+    }
+  
+    .event-details {
+      display: flex;
+      justify-content: space-between;
+  
+      .event-date {
+        font-size: 16px;
+        color: #888;
+        margin-right: 10px;
+      }
+  
+      .event-venue {
+        font-size: 16px;
+        color: #888;
+      }
+    }
+  
+    .event-description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  
+    .event-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+  
+      .event-button {
+        margin-left: 10px;
+      }
+    }
+  }
+  

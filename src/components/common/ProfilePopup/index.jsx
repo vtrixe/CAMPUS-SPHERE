@@ -4,6 +4,7 @@ import { onLogout } from "../../../api/AuthAPI";
 import { getCurrentUser } from "../../../api/FirestoreAPI";
 import Button from "../Button";
 import "./index.scss";
+import Events from "../../../Pages/Events";
 
 export default function ProfilePopup() {
   let navigate = useNavigate();
@@ -26,6 +27,8 @@ export default function ProfilePopup() {
         }
       />
       <Button title="Log out" onClick={onLogout} />
+      <a href="/events" className="eventup">Promote your Event!</a>
+
     </div>
   );
 }

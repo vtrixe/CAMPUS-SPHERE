@@ -14,11 +14,13 @@ import {
 } from "firebase/firestore";
 import { toast } from "react-toastify";
 
+
 let postsRef = collection(firestore, "posts");
 let userRef = collection(firestore, "users");
 let likeRef = collection(firestore, "likes");
 let commentsRef = collection(firestore, "comments");
 let connectionRef = collection(firestore, "connections");
+let eventsRef = collection(firestore,"events");
 
 export const postStatus = (object) => {
   addDoc(postsRef, object)
@@ -40,6 +42,32 @@ export const getStatus = (setAllStatus) => {
     );
   });
 };
+
+export const addEvent = (eventData) => {
+  return addDoc(eventsRef, eventData);
+};
+
+export const postEvent = (object) => {
+  addDoc(eventsRef, object)
+    .then(() => {
+      toast.success("Event has been added successfully");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+export const getEvents = (setAllEvents) => {
+  const q = query(eventsRef, orderBy("date"));
+  onSnapshot(q, (response) => {
+    setAllEvents(
+      response.docs.map((docs) => {
+        return { ...docs.data(), id: docs.id };
+      })
+    );
+  });
+};
+
 
 export const getAllUsers = (setAllUsers) => {
   onSnapshot(userRef, (response) => {
