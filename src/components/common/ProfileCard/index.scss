@@ -1,7 +1,7 @@
 .profile-card {
   width: auto;
   height: auto;
-  background-color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.462);
   margin: 30px;
   border-radius: 5px;
   padding: 20px;
@@ -14,7 +14,7 @@
       height: 200px;
       object-fit: contain;
       border-radius: 50%;
-      border: 2px solid #cacaca;
+      border: 2px solid black;
       padding: 5px;
       cursor: pointer;
     }
@@ -24,8 +24,8 @@
       .college,
       .company {
         font-family: system-ui;
-        color: rgba(0, 0, 0, 0.9);
-        font-size: 14px;
+        color: lavender;
+        font-size: 26px;
         font-weight: 600;
         line-height: 30px;
       }
@@ -37,11 +37,12 @@
   }
 
   .website {
-    color: #004c75 !important;
+    color: black !important;
     -webkit-link: #004c75;
   }
   .skill-label {
     font-weight: 600;
+    color: black;
   }
   .edit-btn {
     position: absolute;
@@ -53,14 +54,14 @@
     }
 
     .edit-icon:hover {
-      background-color: rgb(197, 197, 197);
+      background-color:rgba(0, 0, 0, 0.538);
       padding: 10px;
       border-radius: 50%;
     }
   }
   .userName {
     font-family: system-ui;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.736);
     font-weight: 600;
     font-size: 24px;
     margin-top: 10px;
@@ -71,7 +72,7 @@
     font-family: system-ui;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.709);
     width: 320px;
     line-height: 20px;
   }

@@ -7,7 +7,7 @@ import ConnectionLayout from "../layouts/ConnectionLayout";
 import  Landing from "../Pages/Landing"
 import "../index.scss"
 import Portfolio from "../Pages/portfolio.jsx";
-import Hiring from "../Pages/Hiring";
+import Hiring from "../Pages/Hiring.jsx";
 import Events from "../Pages/Events";
 import About from "../Pages/about";
 import Contact from "../Pages/contactUs";

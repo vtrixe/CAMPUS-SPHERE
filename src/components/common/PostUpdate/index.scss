@@ -7,9 +7,9 @@
   .user-details {
     width: 550px;
     height: auto;
-    background-color: whitesmoke;
+    background-color:rgb(235, 226, 226);
     margin-top: 100px;
-    border: 1px solid #b7b7b7;
+    border: 2px solid #b7b7b7;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -20,26 +20,28 @@
       object-fit: cover;
       border-radius: 50%;
       margin-top: -60px;
-      border: 1px solid #b7b7b7;
+      border: 1px solid #db1919;
       padding: 1px;
     }
 
     .name {
       font-weight: 600;
       font-family: system-ui;
+      color: black;
     }
 
     .headline {
       font-family: system-ui;
       margin-top: -15px;
+      color: black;
     }
   }
   .post-status {
     width: 550px;
     height: 120px;
-    background-color: whitesmoke;
+    background-color: rgb(235, 226, 226);
     margin-top: 30px;
-    border: 1px solid #b7b7b7;
+    border: 2px solid #b7b7b7;
     border-radius: 7px;
     display: flex;
     justify-content: space-around;
@@ -56,9 +58,9 @@
       height: 50px;
       text-align: left;
       color: rgba(84, 84, 84, 0.89);
-      background-color: whitesmoke;
+      background-color: rgba(205, 231, 237, 0.613);
       outline: none;
-      border: 1px solid #b7b7b7;
+      border: 2px solid #b7b7b7;
       border-radius: 30px;
       margin-left: -30px;
       cursor: pointer;
