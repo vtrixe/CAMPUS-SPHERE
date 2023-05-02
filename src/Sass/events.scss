@@ -37,6 +37,7 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.3);
+    
   }
   
   .event-title {
@@ -93,6 +94,44 @@
   
   .overlay.active .content {
     transform: scale(1);
+  }
+  .event-venue {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-left: 320px;
+  }
+  
+  .event-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    
+    margin-left: 300px;
+  }
+  .event-link2 {
+    display: inline-block;
+   
+   
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+   
+  }
+  .event-link2:hover {
+   
+    color: black;
+  }
+  
+  .event-link:hover {
+    background-color: gray;
+    color: #fff;
   }
   
   @media (max-width: 768px) {
