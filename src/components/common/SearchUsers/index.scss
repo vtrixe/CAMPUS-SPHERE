@@ -5,15 +5,15 @@
   align-items: center;
   .close-icon {
     margin-left: -30px;
-    color: #707070;
+    color: white;
   }
   input {
     width: 100%;
     height: 30px;
-    background-color: whitesmoke;
+    background-color: black;
     border: 1px solid #bbbbbb;
     border-radius: 10px;
-    color: #212121;
+    color: #8251c5;
     padding-left: 10px;
     font-size: 14px;
     outline: none;
@@ -21,7 +21,7 @@
   }
 
   input:focus {
-    border: 1px solid #707070;
+    border: 1px solid black;
   }
 
   ::placeholder {
