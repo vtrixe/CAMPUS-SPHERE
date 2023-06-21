@@ -11,6 +11,8 @@ import Hiring from "../Pages/Hiring.jsx";
 import Events from "../Pages/Events";
 import About from "../Pages/about";
 import Contact from "../Pages/contactUs";
+import EventAd from "../Pages/EventAd";
+
 
 export const router = createBrowserRouter([
   {
@@ -58,4 +60,8 @@ export const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+  {
+    path: "/eventad",
+    element: <EventAd />
+  }
 ]);

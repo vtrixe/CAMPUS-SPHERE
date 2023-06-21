@@ -3,30 +3,61 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  flex-direction: column;
-  gap: 10px;
-  background: linear-gradient(90deg, #f6d365, #fda085); /* add gradient background */
+}
 
-  p {
-    font-family: system-ui;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.9);
-    font-size: 20px;
-    animation: pulse 1s ease-in-out infinite; /* add animation */
+.glass {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 80px solid #ffd700; /* Golden color */
+  border-bottom: 80px solid #ffd700; /* Golden color */
+  animation: glass 1s ease-in-out infinite;
+}
+
+.sand {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid #000;
+  position: absolute;
+  animation: sand 1s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes glass {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(0.9);
-      opacity: 0.7;
-    }
-    50% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(0.9);
-      opacity: 0.7;
-    }
+  50% {
+    transform: rotate(180deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sand {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Additional CSS to make the hourglass 200% larger */
+.glass {
+  border-top-width: 160px;
+  border-bottom-width: 160px;
+}
+
+.sand {
+  border-top-width: 160px;
+  border-bottom-width: 160px;
 }

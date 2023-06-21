@@ -4,11 +4,10 @@ import "./index.scss";
 
 export default function Loader() {
   return (
-    <div className="loader">
-      <p>Loading..Please Wait..</p>
-      <Space size="middle">
-        <Spin size="large" />
-      </Space>
-    </div>
+    <div class="loader">
+  <div class="glass"></div>
+  <div class="sand"></div>
+</div>
+
   );
 }

@@ -2,14 +2,10 @@ import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
 import SearchUsers from "../SearchUsers";
 import {
-  AiOutlineHome,
-  AiOutlineUserSwitch,
-  AiOutlineSearch,
-  AiOutlineMessage,
-  AiOutlineBell,
+  AiOutlineSearch
+
 } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import { BsBriefcase } from "react-icons/bs";
 import { getAllUsers } from "../../../api/FirestoreAPI";
 import ProfilePopup from "../ProfilePopup";
 import "./index.scss";
@@ -18,6 +14,7 @@ import Crew from "../Crew";
 import Careerops from "../Careerops";
 import Events from "../Events";
 import Myportfolio from "../Myportfolio";
+import currentProfile from "../ProfileCard"
 
 export default function Topbar({ currentUser }) {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -117,14 +114,13 @@ export default function Topbar({ currentUser }) {
           </a>
 
 
-          <a href="/events">
+          <a href="/eventad">
 
           <Events size={30} className="react-icon" />
           </a>
 
-          <a href="/portfolio">
-          <Myportfolio size={30} className="react-icon" />
-          </a>
+   
+
         </div>
       )}
       <img

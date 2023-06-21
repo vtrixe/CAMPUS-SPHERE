@@ -17,12 +17,14 @@ export const LoginAPI = (email, password) => {
 };
 
 export const RegisterAPI = (email, password) => {
-  try {
-    let response = createUserWithEmailAndPassword(auth, email, password);
-    return response;
-  } catch (err) {
-    return err;
+  const thaparEmailRegex = /^[A-Za-z0-9._%+-]+_?[A-Za-z0-9._%+-]*@thapar\.edu$/;
+  // Validate the email address
+  if (!thaparEmailRegex.test(email)) {
+    return Promise.reject(new Error('Invalid email address. Only university email addresses are allowed.'));
   }
+
+  // Create a new user with the validated email address and password
+  return createUserWithEmailAndPassword(auth, email, password);
 };
 
 export const GoogleSignInAPI = () => {
